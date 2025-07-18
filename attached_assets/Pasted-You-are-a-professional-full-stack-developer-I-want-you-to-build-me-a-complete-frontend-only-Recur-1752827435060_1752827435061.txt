@@ -1,0 +1,89 @@
+You are a professional full-stack developer. I want you to build me a complete **frontend-only Recurring Date Picker Component project** using **React (TypeScript)**, styled with **Tailwind CSS**, and using **Zustand** for state management.
+
+This project replicates the Recurring Date Picker functionality found in apps like TickTick.
+
+---
+
+🔧 **PROJECT REQUIREMENTS**:
+
+✅ **Framework**:  
+- Use **React with TypeScript**
+
+✅ **Styling**:  
+- Style everything using **Tailwind CSS**  
+- Ensure **responsive** and clean design across screen sizes
+
+✅ **State Management**:  
+- Use **Zustand** (preferred) for global state  
+- Store selected frequency, interval, specific days, monthly rules, and date range
+
+---
+
+✅ **Component Breakdown**:
+
+1. `RecurrenceOptions`  
+   - Choose between Daily / Weekly / Monthly / Yearly
+
+2. `RecurrenceSettings`  
+   - Allows configuration like “Every X days/weeks/months/years”
+
+3. `DaySelector`  
+   - Multi-select weekdays (Mon, Wed, Fri)
+
+4. `MonthlyPatternPicker`  
+   - Choose a monthly pattern (e.g., 2nd Tuesday)
+
+5. `DateRangePicker`  
+   - Select Start Date (required) and End Date (optional)
+
+6. `MiniCalendarPreview`  
+   - Display the dates selected in a mini calendar  
+   - Use `react-calendar` or build your own simple highlight calendar
+
+7. `SummaryPreview`  
+   - Show human-readable text like  
+     “Every 2 weeks on Monday and Thursday, from July 20 to August 31”
+
+---
+
+⚙️ **Functionality**:
+
+🔁 Recurrence Options:  
+- Daily, Weekly, Monthly, Yearly
+
+⚙️ Customization:  
+- “Every X days/weeks/months”  
+- Select specific weekdays  
+- Monthly: “2nd Tuesday of the month”  
+- Yearly support (optional)
+
+📅 Date Range:  
+- Must support selecting Start Date (mandatory) and End Date (optional)
+
+📆 Calendar:  
+- Visually show selected recurring dates using highlights
+
+🧹 Code Quality:  
+- Modular and reusable component structure  
+- Keep logic separate from UI where possible  
+- Maintain clean and readable codebase
+
+---
+
+📂 **Suggested Folder Structure**:
+src/
+├── components/
+│ ├── RecurrenceOptions.tsx
+│ ├── RecurrenceSettings.tsx
+│ ├── DaySelector.tsx
+│ ├── MonthlyPatternPicker.tsx
+│ ├── DateRangePicker.tsx
+│ ├── MiniCalendarPreview.tsx
+│ └── SummaryPreview.tsx
+├── store/
+│ └── recurrenceStore.ts
+├── utils/
+│ └── recurrenceUtils.ts
+├── App.tsx
+└── index.tsx 
+
