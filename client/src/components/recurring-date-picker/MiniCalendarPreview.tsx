@@ -63,7 +63,7 @@ export default function MiniCalendarPreview() {
             
             return (
               <div
-                key={index}
+                key={`${date.getFullYear()}-${date.getMonth()}-${date.getDate()}-${index}`}
                 className={cn(
                   "text-sm p-2 relative",
                   isInCurrentMonth ? "text-gray-900" : "text-gray-400",
